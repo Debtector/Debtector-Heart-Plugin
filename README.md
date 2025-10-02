@@ -15,6 +15,20 @@
 </div>
 
 <!-- Code -->
+```js
+// Configure debt data here
+const debtData = {
+  "J0001": [
+    { amount: 42, date: makeDate(2019, 12, 2) }
+  ],
+  "J0002": [
+    { amount: 6, date: makeDate(2025, 4, 1) },
+    { hearts: true, date: makeDate(2025, 4, 7) }
+  ],
+};
+```
+
+<!-- Code -->
  ```js
   if (res.totalMoney > 0 && res.totalHearts > 0) {
     tot.textContent = `Total Debt: ${formatCurrency(res.totalMoney)} + ❤️${res.totalHearts.toFixed(2)}`;
